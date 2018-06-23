@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body, #root, div [data-reactroot] {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+search-form {
+  margin: 30px 0;
+}
+
+.options {
+  justify-content: space-around;
+}
+
+.anchor {
+  text-decoration: none;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}

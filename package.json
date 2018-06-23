@@ -1,0 +1,55 @@
+{
+  "name": "front-end-test",
+  "version": "1.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mariopolo2805/front-end-test.git"
+  },
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "1.0.0",
+    "@material-ui/icons": "1.0.0",
+    "axios": "0.16.2",
+    "babel-polyfill": "6.26.0",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "eslint-config-airbnb": "15.1.0",
+    "eslint-config-prettier": "2.4.0",
+    "glamor": "2.20.40",
+    "glamorous": "4.7.0",
+    "prettier-eslint": "7.1.0",
+    "prop-types": "15.6.1",
+    "react": "16.4.0",
+    "react-dom": "16.4.0",
+    "react-router-dom": "4.2.2",
+    "webpack": "^4.9.1"
+  },
+  "devDependencies": {
+    "eslint": "4.19.1",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-prettier": "2.2.0",
+    "eslint-plugin-react": "7.3.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "husky": "0.14.3",
+    "lint-staged": "4.1.0",
+    "prettier": "1.6.1",
+    "react-scripts": "1.1.4",
+    "react-test-renderer": "16.4.0"
+  },
+  "scripts": {
+    "build": "react-scripts build",
+    "format": "eslint --fix",
+    "format:all": "eslint --fix \"src/**/*.js\" \"test/**/*.js\"",
+    "precommit": "lint-staged",
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "test": "react-scripts test --env=jsdom"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run format",
+      "git add"
+    ]
+  }
+}
