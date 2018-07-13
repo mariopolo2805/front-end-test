@@ -55,7 +55,7 @@ We will assess the task based on the following criteria:
 ## Stack
 
  - React
- - CRA + Webpack + Babej
+ - CRA + Webpack + Babel
  - Jest + Enzyme
  - ESLint + Prettier
  - Material UI + Glamorous
